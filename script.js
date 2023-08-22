@@ -1,9 +1,23 @@
 "use strict";
 
+let rndNum = generateRandomNumber(100);
+
 function generateRandomNumber(max) {
   return Math.floor(Math.random() * max);
 }
 
-let rndNum = generateRandomNumber(100);
-
 console.log(rndNum);
+
+window.addEventListener("load", newNumber);   
+
+
+function newNumber() {
+document.querySelector("#randomNumber").textContent = rndNum;
+
+}
+
+
+
+// function clickButton() {
+//     document.querySelector("#generer").addEventListener("click", newNumber);
+// }
