@@ -16,8 +16,3 @@ document.querySelector("#randomNumber").textContent = rndNum;
 
 }
 
-
-
-// function clickButton() {
-//     document.querySelector("#generer").addEventListener("click", newNumber);
-// }
